@@ -131,17 +131,20 @@ input[type="radio"].visually-hidden {
   color: black;
   font-size: 21px;
   font-weight: bold;
+  margin: 0;
+  padding: 63px 290px 35px 290px;
+}
 
-  margin-top: 63px;
-  margin-bottom: 32px;
-  padding: 0 auto;
+.main-title p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 55px;
 }
 
 /*features-section*/
 
 .features-list {
   margin: 0;
-  margin-top: -17px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
