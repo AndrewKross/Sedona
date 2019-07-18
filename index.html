@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+  <header class="main-header">
+    <nav class="main-navigation">
+      <img class="main-logo" src="img/logo.png" alt="Логотип Седоны">
+      <ul class="site-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и Видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="main-content">
+    <div class="main-title">
+      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+
+    <section class="features">
+      <ol class="features-list">
+        <li class="feature-first feature-main">
+          <div class="features-wrapper">
+          <h2>Настоящий городок</h2>
+          <span>— №1 —</span>
+          <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img src="img/town.png" alt="Фото города">
+        </li>
+        <li class="feature-second feature-main">
+          <img src="img/canyon.png" alt="Фото каньона">
+          <div class="features-wrapper">
+          <h2>Там есть Мост дьявола</h2>
+          <span>— №2 —</span>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </li>
+        <li class="feature-block">
+          <h2>Небольшая площадь</h2>
+          <span>— №3 —</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="feature-block">
+          <h2>Красивая дорога</h2>
+          <span>— №4 —</span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="feature-block">
+          <h2>Мало туристов</h2>
+          <span>— №5 —</span>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </li>
+        <li class="advice">
+          <ul class="advice-list">
+            <li class="advice-one">
+              <h2>Жилье</h2>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="advice-two">
+              <h2>Еда</h2>
+              <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </li>
+            <li class="advice-three">
+              <h2>Сувениры</h2>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="hotel-search">
+      <div class="wrapper">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <form class="hotel-search-form">
+          <div class="form-header">
+            <h3>Поиск гостиницы в Седоне</h3>
+          </div>
+          <ul class="form-fields">
+            <li class="long-field">
+              <label for="arrive-date">Дата заезда:</label>
+              <input type="text" id="arrive-date" value="24 апреля 2017">
+            </li>
+            <li class="long-field">
+              <label for="exit-date">Дата выезда:</label>
+              <input type="text" id="exit-date" value="4 июля 2017">
+            </li>
+            <li class="short-field short-field-left">
+              <label for="adults-number">Взрослые:</label>
+              <input type="text" id="adults-number" value="2">
+            </li>
+            <li class="short-field short-field-right">
+              <label for="children-number">Дети:</label>
+              <input type="text" id="children-number" value="0">
+            </li>
+          </ul>
+          <input type="submit" value="Найти" name="hotel-search-button">
+        </form>
+      </div>
+      <div class="map">
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+    <div class="opacity-wrapper">
+      <div class="wrapper">
+      <b class="visitsedona">#VISITSEDONA</b>
+      <ul class="social-links">
+        <li><a class="tw-link" href="#">Твиттер</a></li>
+        <li><a class="fb-link" href="#">Фейсбук</a></li>
+        <li><a class="yt-link" href="#">Ютуб</a></li>
+      </ul>
+      <div class="copyright">
+        <span>Website by </span><a href="#">HTML Academy</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+</div>
+
+</body>
+
+</html>
