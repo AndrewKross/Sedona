@@ -238,16 +238,19 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .hotel-search p {
   line-height: 24px;
+  margin: 0;
 }
 
 .hotel-search .wrapper {
   min-height: 291px;
   background-color: white;
-  padding-top: 54px;
+  padding-top: 55px;
   text-align: center;
   box-sizing: border-box;
   margin-bottom: 0;
@@ -273,17 +276,34 @@ input[type="radio"].visually-hidden {
   width: 568px;
   height: 86px;
   position: absolute;
-  top: -86px;
-  left: 0;
-  padding-top: 30px;
+  left: 316px;
+  bottom: 0;
   box-sizing: border-box;
   background-color: #766357;
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+}
+
+.form-header:hover,
+.form-header:focus {
+  background-color: #604e43;
+  outline: none;
+}
+
+.form-header:active {
+  background-color: #503e33;
+  color: rgba(255,255,255,0.3);
 }
 
 .form-fields {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 
 .form-fields li {
@@ -291,6 +311,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .long-field input {
@@ -308,10 +329,10 @@ input[type="radio"].visually-hidden {
 }
 
 .short-field input{
-  width: 114px;
+  width: 38px;
   height: 38px;
   box-sizing: border-box;
-  padding: 12px 0 12px 0;
+  padding: 12px 0;
   background-color: #f2f2f2;
   border: none;
   align-self: flex-end;
@@ -320,6 +341,19 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-left: 15px;
+}
+
+[class$="-sign"] {
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+  padding: 12px 0;
+  background-color: #f2f2f2;
+  align-self: flex-end;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
 }
 
 .form-fields label {
@@ -327,16 +361,16 @@ input[type="radio"].visually-hidden {
 }
 
 .form-fields .short-field-left {
- width: 229px;
+ width: 50%;
  position: relative;
 }
 
 .form-fields .short-field-right {
-width: 229px;
+width: 50%;
 position: relative;
 }
 
-.short-field-left::before {
+.short-field .min-sign::before {
   content: "";
   width: 12px;
   height: 3px;
@@ -346,54 +380,69 @@ position: relative;
   left: 128px;
 }
 
-.short-field-left label::after {
+.short-field .max-sign::before {
   content: "";
   width: 11px;
   height: 3px;
   background: #a9a9a9;
   position: absolute;
   top: 18px;
-  left: 201px;
+  left: 205px;
 }
 
-.short-field-left label::before {
+.short-field .max-sign::after {
   content: "";
   width: 3px;
   height: 11px;
   background: #a9a9a9;
   position: absolute;
   top: 14px;
-  left: 205px;
+  left: 209px;
 }
 
-.short-field-right::before {
-  content: "";
-  width: 12px;
-  height: 3px;
-  background: #a9a9a9;
-  position: absolute;
-  top: 18px;
-  left: 128px;
+.min-sign:hover::before,
+.max-sign:hover::before,
+.max-sign:hover::after,
+.min-sign:focus::before,
+.max-sign:focus::before,
+.max-sign:focus::after {
+  background: black;
 }
 
-.short-field-right label::after {
-  content: "";
-  width: 11px;
-  height: 3px;
-  background: #a9a9a9;
-  position: absolute;
-  top: 18px;
-  left: 201px;
+.min-sign:active::before,
+.max-sign:active::before,
+.max-sign:active::after {
+  background: #81b3d2;
 }
 
-.short-field-right label::before {
-  content: "";
-  width: 3px;
-  height: 11px;
-  background: #a9a9a9;
+.calendar {
+  background: url(svg/calendar.svg) no-repeat;
   position: absolute;
-  top: 14px;
-  left: 205px;
+  left: 430px;
+  width: 21px;
+  height: 22px;
+  border: none;
+}
+
+.calendar:hover,
+.calendar:focus {
+  background: url(svg/calendar-hover.svg) no-repeat;
+  outline: none;
+}
+
+.calendar:active {
+  background: url(svg/calendar-active.svg) no-repeat;
+}
+
+.long-field input:hover{
+  background-color: #ebebeb;
+}
+
+.long-field input:active,
+.long-field input:focus {
+  background-color: white;
+  outline: none;
+  border: 2px solid #e5e5e5;
 }
 
 .short-field-right label {
@@ -419,7 +468,19 @@ input[name="hotel-search-button"] {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 24px;
 }
+
+input[name="hotel-search-button"]:hover,
+input[name="hotel-search-button"]:focus{
+  background-color: #669ec0;
+}
+
+input[name="hotel-search-button"]:active {
+  background-color: #5496bd;
+  color: rgba(255,255,255,0.3);
+}
+
 
 .map {
   height: 594px;

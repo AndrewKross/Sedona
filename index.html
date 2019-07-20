@@ -90,26 +90,32 @@
       <div class="wrapper">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <form class="hotel-search-form">
-          <div class="form-header">
-            <h3>Поиск гостиницы в Седоне</h3>
-          </div>
+        <button class="form-header">
+          <span>Поиск гостиницы в Седоне</span>
+        </button>
+        <form class="hotel-search-form hotel-search-form-hidden">
           <ul class="form-fields">
             <li class="long-field">
               <label for="arrive-date">Дата заезда:</label>
               <input type="text" id="arrive-date" value="24 апреля 2017">
+              <button type="button" class="calendar"></button>
             </li>
             <li class="long-field">
               <label for="exit-date">Дата выезда:</label>
               <input type="text" id="exit-date" value="4 июля 2017">
+              <button type="button" class="calendar"></button>
             </li>
             <li class="short-field short-field-left">
               <label for="adults-number">Взрослые:</label>
-              <input type="text" id="adults-number" value="2">
+              <button type="button" class="min-sign"></button>
+              <input type="number" id="adults-number" value="2">
+              <button type="button" class="max-sign"></button>
             </li>
             <li class="short-field short-field-right">
               <label for="children-number">Дети:</label>
-              <input type="text" id="children-number" value="0">
+              <button type="button" class="min-sign"></button>
+              <input type="number" id="children-number" value="0">
+              <button type="button" class="max-sign"></button>
             </li>
           </ul>
           <input type="submit" value="Найти" name="hotel-search-button">
