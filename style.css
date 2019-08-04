@@ -257,6 +257,11 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+@keyframes slide {
+  0% { transform: translateY(-395px);}
+  100% {transform: translateY(0);}
+}
+
 .hotel-search-form {
   line-height: 26px;
   color: black;
@@ -270,6 +275,17 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   text-align: left;
   font-weight: bold;
+  box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hotel-search-form-hidden {
+  transition-property: all;
+  transition-duration: 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .form-header {
@@ -485,12 +501,13 @@ input[name="hotel-search-button"]:active {
 .map {
   height: 594px;
   width: 100%;
-  background: url(img/map.jpg) no-repeat center;
   z-index: 1;
-  margin-top: -15px;
-
 }
-/************ Footer *********/
+
+
+/************************* Footer **********************************/
+
+
 
 .opacity-wrapper {
   position: absolute;
